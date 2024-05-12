@@ -1,0 +1,161 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+}
+
+/* Main Wrapper */
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    background: rgb(255, 217, 208);
+    color: rgb(0, 193, 237);
+}
+
+/* Dark variables */
+.dark {
+    background: rgba(16 28 37);
+    color: #fff;
+}
+
+.dark-nav {
+    background: rgba(39 68 90);
+}
+
+.dark-mode-i {
+    color: white !important;
+}
+
+.dark-mode-button {
+    background: rgba(16 28 37) !important;
+
+    &:hover {
+        border: 1px solid transparent !important;
+    }
+}
+
+.card-dark {
+    background: rgba(39 68 90) !important;
+}
+
+/* Header */
+nav {
+    background: white;
+    margin: 20px 0 60px 0;
+    border-radius: 45px;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 10px -5px rgba(0, 0, 0, 0.75);
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: large;
+
+    &:hover {
+        text-decoration: underline rgb(0, 193, 237) 2px;
+    }
+}
+
+/* Mode-button */
+.mode-change-button {
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.363);
+    padding: 5px 10px;
+    border-radius: 45px;
+    cursor: pointer;
+
+    &>i {
+        font-size: 36px;
+        color: rgb(0, 0, 0);
+    }
+
+    &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.753);
+    }
+}
+
+
+.logo {
+    border-radius: 45px;
+    padding: 0 5px;
+}
+
+.logo h1 {
+    font-weight: 800;
+    font-size: 36px;
+}
+
+/* Header end */
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid transparent;
+    padding: 20px 20px;
+    border-radius: 15px;
+    background: rgb(255 199 191);
+    backdrop-filter: blur(1px);
+    max-width: 450px;
+}
+
+.card>.content {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex-wrap: wrap;
+    text-wrap: pretty;
+}
+
+.card>.image {
+    /* Linear Gradient - sample */
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    /* specified code */
+    border-radius: 7px;
+    width: 100%;
+    height: 200px;
+}
+
+/* Buttons */
+.content>.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+}
+
+.content>.buttons button {
+    background-color: rgb(235 184 209);
+    border: 1px solid transparent;
+    border-radius: 7px;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
